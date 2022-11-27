@@ -46,17 +46,18 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
                                                             
 ##                                                            IMPLEMENTATION & DEMONSTRATION
 
-1)  - Opening Metasploitable Framework \
-    - Command : msfconsole \
-    - Permission required : Root \
+1)  - Opening Metasploitable Framework 
+    - Command : msfconsole 
+    - Permission required : Root 
       
 
- 2) - Finding out the target’s ip address \
-    - Pinging the website to see if it is running and extracting its ip address \
-    - Command : ping \
+ 2) - Finding out the target’s ip address 
+    - Pinging the website to see if it is running and extracting its ip address 
+    - Command : ping 
 
-3) - Opening the relevant metasploitable module to perform the attack ● Command : use auxiliary/dos/tcp/synflood \
-   - Setting up the correct parameters for attack \
+3) - Opening the relevant metasploitable module to perform the attack 
+   - Command : use auxiliary/dos/tcp/synflood 
+   - Setting up the correct parameters for attack 
    - Command : show options \
    - Giving the attack module the target’s ip address 
    - Command : set RHOSTS [ipaddress] \

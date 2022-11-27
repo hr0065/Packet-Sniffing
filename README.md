@@ -50,10 +50,14 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
     - Command : msfconsole 
     - Permission required : Root 
       
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/110552885/204135609-8a8f967f-387c-401e-8f22-d77f87e72dc1.png">
 
  2) - Finding out the target’s ip address 
     - Pinging the website to see if it is running and extracting its ip address 
     - Command : ping 
+
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/110552885/204135644-cd8ea938-a8a1-4577-b49a-e11e9a76fb47.png">
+
 
 3) - Opening the relevant metasploitable module to perform the attack 
    - Command : use auxiliary/dos/tcp/synflood 
@@ -62,19 +66,25 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
    - Giving the attack module the target’s ip address 
    - Command : set RHOSTS [ipaddress] 
 
+<img width="425" alt="image" src="https://user-images.githubusercontent.com/110552885/204135652-32f2dcbd-039f-4be8-b56b-13dbcba2413d.png">
+
 4) - Attacking the website by flooding SYN packets to it 
    - Command : exploit 
    - Ctrl+C to terminate the operation 
- 
+
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/110552885/204135657-1f6ba3b3-4154-4500-8f61-18bef47e37f6.png">
+
 5) - Opening up Wireshark Application 
    - Start Capturing Packets 
    - Any single packet can be further examined by double clicking that particular packet. 
- 
- 
- 
- 
+
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/110552885/204135677-2521b6c7-fbef-4494-be23-728b103d0b1e.png">
+
+
 ## RESULT ANALYSIS
 A DOS Attack was done on an intentionally vulnerable website. The attack was analysed through the help of packet sniffing application Wireshark; thousands of SYN packets were seen to be flooded to the target in a matter of seconds and were tracked using Wireshark.
+
+<img width="476" alt="image" src="https://user-images.githubusercontent.com/110552885/204135686-90eddf0d-8cd0-48e5-9557-f3707b8dd4d9.png">
 
 
 

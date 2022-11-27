@@ -1,6 +1,6 @@
-#Packet Sniffing & Synflood Detection using Wireshark
+# Packet Sniffing & Synflood Detection using Wireshark
 
-##ABSTRACT
+## ABSTRACT
                                                                   
 Packet sniffing is a method of tapping each packet as it flows across the network; i.e., it is a technique in which a user sniffs data belonging to other users of the network. 
 Packet sniffers can operate as an administrative tool or for malicious purposes. It depends on the user's intent. Network administrators use them for monitoring and validating network traffic. Packet sniffers are basically applications. They are programs used to read packets that travel across the network layer of the Transmission Control Protocol/Internet Protocol (TCP/IP) layer. (Basically, the packets are retrieved from the network layer and the data is interpreted.)
@@ -18,24 +18,25 @@ A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or ne
 
 
 
-                                                              REQUIREMENTS
-2.1 Operating System – Kali Linux OS
+##                                                              REQUIREMENTS
+
+### Operating System – Kali Linux OS
 
 Kali Linux is a security distribution of Linux derived from Debian and specifically designed for computer forensics and advanced penetration testing. It was developed through rewriting of BackTrack by Mati Aharoni and Devon Kearns of Offensive Security. Kali Linux contains several hundred tools that are well-designed towards various information security tasks, such as penetration testing, security research, computer forensics and reverse engineering.
 
 
-2.2 Packet Analyzer - WIRESHARK
+### Packet Analyzer - WIRESHARK
 
 ◈ Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues.
 ◈ Wireshark is very similar to tcpdump, but has a graphical front-end and integrated sorting and filtering options.Wireshark lets the user put network interface controllers into promiscuous mode (if supported by the network interface controller), so they can see all the traffic visible on that interface including unicast traffic not sent to that network interface controller's MAC address.
 
 
-2.3 Metasploit Framework
+### Metasploit Framework
 
 ◈ The Metasploit Framework is a Ruby-based, modular penetration testing platform that enables you to write, test, and execute exploit code. The Metasploit Framework contains a suite of tools that you can use to test security vulnerabilities, enumerate networks, execute attacks, and evade detection. At its core, the Metasploit Framework is a collection of commonly used tools that provide a complete environment for penetration testing and exploit development.
 
 
-2.4 Vulnerable Website
+### Vulnerable Website
 
 ◈ We cannot attack just any website present on the internet even it be for demonstrating an attack and not actually intending a malicious attack. There are numerous websites on the internet which are specifically made to demonstrate an attack of some kind. As defined it is a intentionally vulnerable website. It can be hacked easily. Some examples can be testphp.vulnweb.com, testfire.net but we will be using the latter in our presentation.
 
@@ -43,34 +44,52 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
 
 
                                                             
-                                                            IMPLEMENTATION & DEMONSTRATION
+##                                                            IMPLEMENTATION & DEMONSTRATION
+
 1)
 ● Opening Metasploitable Framework
 ● Command : msfconsole
 ● Permission required : Root
-
       
-
- ● Finding out the target’s ip address
+2)
+● Finding out the target’s ip address
 ● Pinging the website to see if it is running and extracting its ip
 address
 ● Command : ping
-  3)
+
+3)
 ● Opening the relevant metasploitable module to perform the attack ● Command : use auxiliary/dos/tcp/synflood
 ● Setting up the correct parameters for attack
 ● Command : show options
 ● Giving the attack module the target’s ip address ● Command : set RHOSTS [ipaddress]
 
-  4)
+4)
 ● Attacking the website by flooding SYN packets to it ● Command : exploit
 ● Ctrl+C to terminate the operation
  
- 5)
+5)
 ● Opening up Wireshark Application
 ● Start Capturing Packets
 ● Any single packet can be further examined by double clicking that
 particular packet.
  
-4. RESULT ANALYSIS
-● A DOS Attack was done on an intentionally vulnerable website. The attack was analysed through the help of packet sniffing application Wireshark; thousands of SYN packets were seen to be flooded to the target in a matter of seconds and were tracked using Wireshark.
  
+ 
+ 
+## RESULT ANALYSIS
+● A DOS Attack was done on an intentionally vulnerable website. The attack was analysed through the help of packet sniffing application Wireshark; thousands of SYN packets were seen to be flooded to the target in a matter of seconds and were tracked using Wireshark.
+
+
+
+
+## CONCLUSION
+● Demonstration and Implementation of Packet Sniffing And Synflood Detection Using Wireshark was concluded successfully and all the Networking were followed for the same.
+ 
+
+
+
+## REFERENCES
+● https://www.kali.org/docs/
+● https://www.wireshark.org/docs/
+● https://docs.rapid7.com/metasploit/metasploitable-2-exploit ability-guide/
+● https://www.rapid7.com/db/modules/auxiliary/dos/tcp/synfl ood/

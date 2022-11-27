@@ -58,16 +58,17 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
 3) - Opening the relevant metasploitable module to perform the attack 
    - Command : use auxiliary/dos/tcp/synflood 
    - Setting up the correct parameters for attack 
-   - Command : show options \
+   - Command : show options 
    - Giving the attack module the target’s ip address 
-   - Command : set RHOSTS [ipaddress] \
+   - Command : set RHOSTS [ipaddress] 
 
-4) - Attacking the website by flooding SYN packets to it ● Command : exploit \
-   - Ctrl+C to terminate the operation \
+4) - Attacking the website by flooding SYN packets to it 
+   - Command : exploit 
+   - Ctrl+C to terminate the operation 
  
-5) - Opening up Wireshark Application \
-   - Start Capturing Packets \
-   - Any single packet can be further examined by double clicking that particular packet. \
+5) - Opening up Wireshark Application 
+   - Start Capturing Packets 
+   - Any single packet can be further examined by double clicking that particular packet. 
  
  
  
@@ -88,4 +89,4 @@ Demonstration and Implementation of Packet Sniffing And Synflood Detection Using
 https://www.kali.org/docs/ \
 https://www.wireshark.org/docs/ \
 https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/ \
-https://www.rapid7.com/db/modules/auxiliary/dos/tcp/synflood/ \
+https://www.rapid7.com/db/modules/auxiliary/dos/tcp/synflood/ 

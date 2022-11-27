@@ -2,8 +2,8 @@
 
 ## ABSTRACT
                                                                   
-Packet sniffing is a method of tapping each packet as it flows across the network; i.e., it is a technique in which a user sniffs data belonging to other users of the network. 
-Packet sniffers can operate as an administrative tool or for malicious purposes. It depends on the user's intent. Network administrators use them for monitoring and validating network traffic. Packet sniffers are basically applications. They are programs used to read packets that travel across the network layer of the Transmission Control Protocol/Internet Protocol (TCP/IP) layer. (Basically, the packets are retrieved from the network layer and the data is interpreted.)
+Packet sniffing is a method of tapping each packet as it flows across the network; i.e., it is a technique in which a user sniffs data belonging to other users of the network. \
+Packet sniffers can operate as an administrative tool or for malicious purposes. It depends on the user's intent. Network administrators use them for monitoring and validating network traffic. Packet sniffers are basically applications. They are programs used to read packets that travel across the network layer of the Transmission Control Protocol/Internet Protocol (TCP/IP) layer. (Basically, the packets are retrieved from the network layer and the data is interpreted.) \
 Packet sniffers are utilities that can be efficiently used for network administration. At the same time, it can also be used for nefarious activities. However, a user can employ a number of techniques to detect sniffers on the network and protect the data from sniffers. The technique behind packet sniffing on shared bus broadcast LANs is explained.
 
 
@@ -12,7 +12,7 @@ Packet sniffers are utilities that can be efficiently used for network administr
 ##                                                               INTRODUCTION
                                                                
 A packet analyzer, also known as packet sniffer, protocol analyzer, or network analyzer, is a computer program or computer hardware such as a packet capture appliance, that can intercept and log traffic that passes over a computer network or part of a network. 
-Packet capture is the process of intercepting and logging traffic. As data streams flow across the network, the analyzer captures each packet and, if needed, decodes the packet's raw data, showing the values of various fields in the packet, and analyzes its content according to the appropriate RFC or other specifications.
+Packet capture is the process of intercepting and logging traffic. As data streams flow across the network, the analyzer captures each packet and, if needed, decodes the packet's raw data, showing the values of various fields in the packet, and analyzes its content according to the appropriate RFC or other specifications.\
 A Denial-of-Service (DoS) attack is an attack meant to shut down a machine or network, making it inaccessible to its intended users. DoS attacks accomplish this by flooding the target with traffic, or sending it information that triggers a crash. In both instances, the DoS attack deprives legitimate users (i.e. employees, members, or account holders) of the service or resource they expected.
 
 
@@ -27,7 +27,7 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
 
 ### Packet Analyzer - WIRESHARK
 
-◈ Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues.
+◈ Wireshark is a free and open-source packet analyzer. It is used for network troubleshooting, analysis, software and communications protocol development, and education. Originally named Ethereal, the project was renamed Wireshark in May 2006 due to trademark issues. \
 ◈ Wireshark is very similar to tcpdump, but has a graphical front-end and integrated sorting and filtering options.Wireshark lets the user put network interface controllers into promiscuous mode (if supported by the network interface controller), so they can see all the traffic visible on that interface including unicast traffic not sent to that network interface controller's MAC address.
 
 
@@ -46,50 +46,45 @@ Kali Linux is a security distribution of Linux derived from Debian and specifica
                                                             
 ##                                                            IMPLEMENTATION & DEMONSTRATION
 
-1)
-● Opening Metasploitable Framework
-● Command : msfconsole
-● Permission required : Root
+1)  - Opening Metasploitable Framework \
+    - Command : msfconsole \
+    - Permission required : Root \
       
-2)
-● Finding out the target’s ip address
-● Pinging the website to see if it is running and extracting its ip
-address
-● Command : ping
 
-3)
-● Opening the relevant metasploitable module to perform the attack ● Command : use auxiliary/dos/tcp/synflood
-● Setting up the correct parameters for attack
-● Command : show options
-● Giving the attack module the target’s ip address ● Command : set RHOSTS [ipaddress]
+ 2) - Finding out the target’s ip address \
+    - Pinging the website to see if it is running and extracting its ip address \
+    - Command : ping \
 
-4)
-● Attacking the website by flooding SYN packets to it ● Command : exploit
-● Ctrl+C to terminate the operation
+3) - Opening the relevant metasploitable module to perform the attack ● Command : use auxiliary/dos/tcp/synflood \
+   - Setting up the correct parameters for attack \
+   - Command : show options \
+   - Giving the attack module the target’s ip address 
+   - Command : set RHOSTS [ipaddress] \
+
+4) - Attacking the website by flooding SYN packets to it ● Command : exploit \
+   - Ctrl+C to terminate the operation \
  
-5)
-● Opening up Wireshark Application
-● Start Capturing Packets
-● Any single packet can be further examined by double clicking that
-particular packet.
+5) - Opening up Wireshark Application \
+   - Start Capturing Packets \
+   - Any single packet can be further examined by double clicking that particular packet. \
  
  
  
  
 ## RESULT ANALYSIS
-● A DOS Attack was done on an intentionally vulnerable website. The attack was analysed through the help of packet sniffing application Wireshark; thousands of SYN packets were seen to be flooded to the target in a matter of seconds and were tracked using Wireshark.
+A DOS Attack was done on an intentionally vulnerable website. The attack was analysed through the help of packet sniffing application Wireshark; thousands of SYN packets were seen to be flooded to the target in a matter of seconds and were tracked using Wireshark.
 
 
 
 
 ## CONCLUSION
-● Demonstration and Implementation of Packet Sniffing And Synflood Detection Using Wireshark was concluded successfully and all the Networking were followed for the same.
+Demonstration and Implementation of Packet Sniffing And Synflood Detection Using Wireshark was concluded successfully and all the Networking were followed for the same.
  
 
 
 
 ## REFERENCES
-● https://www.kali.org/docs/
-● https://www.wireshark.org/docs/
-● https://docs.rapid7.com/metasploit/metasploitable-2-exploit ability-guide/
-● https://www.rapid7.com/db/modules/auxiliary/dos/tcp/synfl ood/
+https://www.kali.org/docs/ \
+https://www.wireshark.org/docs/ \
+https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/ \
+https://www.rapid7.com/db/modules/auxiliary/dos/tcp/synflood/ \
